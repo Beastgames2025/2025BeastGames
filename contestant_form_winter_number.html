@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Beast Games – Contestant Application Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAuMB9zXl16UAAAAASUVORK5CYII=') no-repeat center;
+      background-size: cover;
+      margin: 40px;
+    }
+    .watermark {
+      position: fixed;
+      top: 30%;
+      left: 10%;
+      font-size: 60px;
+      color: rgba(200, 200, 200, 0.1);
+      transform: rotate(-30deg);
+      z-index: -1;
+    }
+    .form-container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 40px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      position: relative;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+    h2 {
+      text-align: center;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="watermark">The Beast Games</div>
+  <div class="form-container">
+    <h2>The Beast Games Show – Contestant Application Form</h2>
+    <p>Please fill in the following details accurately. Fields marked with * are required.</p>
+
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <label>Full Name*:<input type="text" name="fullName" required></label>
+      <label>Date of Birth*:<input type="date" name="dob" required></label>
+      <label>Email Address*:<input type="email" name="email" required></label>
+      <label>Phone Number*:<input type="tel" name="phone" required></label>
+      <label>Address*:<textarea name="address" required></textarea></label>
+      <label>Bank Name* (For Grand Prize Transfer):<input type="text" name="bankName" required></label>
+      <label>Winter Number (Auto-generated, e.g., WN-1234):<input type="text" name="winterNumber" placeholder="WN-1234" readonly></label>
+      <label>Height (cm)*:<input type="number" name="height" required></label>
+      <label>Weight (kg)*:<input type="number" name="weight" required></label>
+      <label>Eye Color*:<input type="text" name="eyeColor" required></label>
+      <label>Blood Type*:<input type="text" name="bloodType" required></label>
+      <label>Clothing Size (S, M, L, XL, etc.)*:<input type="text" name="clothingSize" required></label>
+      <label>Any Disabilities (if any):<textarea name="disabilities"></textarea></label>
+      <label>Allergies (if any):<textarea name="allergies"></textarea></label>
+      <label>Would you like to volunteer as a Group Leader? (Yes/No):<input type="text" name="groupLeader"></label>
+      <button type="submit">Submit Application</button>
+    </form>
+
+    <div class="footer">Powered by The Beast…</div>
+  </div>
+</body>
+</html>
